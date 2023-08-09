@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../Navbar.css';
 
 export default function Navbar({ currentPage, handlePageChange }) {
-  // Declare state variable to track the current navbar item that was clicked on
+  // Declare state variable to track the current navbar item that was clicked on (home is default)
   const [activeItem, setActiveItem] = useState('');
 
   // Update the activeItem state when the currentPage prop changes
@@ -30,9 +30,10 @@ export default function Navbar({ currentPage, handlePageChange }) {
       {/* Navbar */}
       <nav>
         <div class='nav-wrapper'>
-          <a href='#!' class='brand-logo'>
-            Logo
-          </a>
+          <img
+            src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0b6ce5ff-f14d-4e64-b03a-556fd184594a/dg56yiu-b3ae2b7d-d2d3-4adc-ac4d-c9a9b24ce474.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBiNmNlNWZmLWYxNGQtNGU2NC1iMDNhLTU1NmZkMTg0NTk0YVwvZGc1NnlpdS1iM2FlMmI3ZC1kMmQzLTRhZGMtYWM0ZC1jOWE5YjI0Y2U0NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aeAvt3016KOSvZext9J18PrQjZ-zwJiME40QDJW0qBI'
+            className='brand-logo'
+          />
 
           {/* Hamburger button (Mobile menu) */}
           <a href='#' data-target='mobile-nav' className='sidenav-trigger'>
@@ -52,6 +53,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 Home
               </a>
             </li>
+
             <li>
               <a
                 href='#'
@@ -65,6 +67,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 About
               </a>
             </li>
+
             <li>
               <a
                 href='#'
@@ -76,6 +79,34 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 onClick={() => handleItemClick('gallery')}
               >
                 Gallery
+              </a>
+            </li>
+
+            <li>
+              <a
+                href='#'
+                className={
+                  activeItem === 'etsy'
+                    ? 'active no-hover-effect'
+                    : 'no-hover-effect'
+                }
+                onClick={() => handleItemClick('etsy')}
+              >
+                Etsy
+              </a>
+            </li>
+
+            <li>
+              <a
+                href='#'
+                className={
+                  activeItem === 'requests'
+                    ? 'active no-hover-effect'
+                    : 'no-hover-effect'
+                }
+                onClick={() => handleItemClick('requests')}
+              >
+                Requests
               </a>
             </li>
           </ul>

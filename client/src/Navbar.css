@@ -4,7 +4,7 @@
 
 nav ul a:hover {
   /* background-color: #ca453b67 !important; */
-  color: white !important;
+  color: white;
 }
 
 a {
@@ -35,20 +35,28 @@ ul.sidenav {
   background-color: var(--grey);
 }
 
-a.brand-logo {
+img.brand-logo {
+  margin-top: 15px;
   display: flex !important;
   align-items: flex-start !important;
   padding-left: 2rem !important;
+  will-change: filter !important;
+  transition: filter 300ms !important;
 }
 
-a.brand-logo:hover {
-  color: inherit;
+img.brand-logo:hover {
+  cursor: crosshair !important;
+  filter: drop-shadow(0 0 1em #fff) !important;
 }
 
 a.active {
-  color: #ca453b;
+  color: #ca453b !important;
   /* Removes Materialize background color change on click */
   background-color: initial !important;
+}
+
+a.active:hover {
+  color: #ca453b;
 }
 
 /* Removes default Materialize hover */
