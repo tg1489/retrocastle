@@ -1,0 +1,60 @@
+.nav-wrapper {
+  background-color: var(--grey);
+}
+
+nav ul a:hover {
+  /* background-color: #ca453b67 !important; */
+  color: white !important;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: #ca453b;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca453b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+ul.sidenav {
+  background-color: var(--grey);
+}
+
+a.brand-logo {
+  display: flex !important;
+  align-items: flex-start !important;
+  padding-left: 2rem !important;
+}
+
+a.brand-logo:hover {
+  color: inherit;
+}
+
+a.active {
+  color: #ca453b;
+  /* Removes Materialize background color change on click */
+  background-color: initial !important;
+}
+
+/* Removes default Materialize hover */
+a.no-hover-effect:not(.active):hover,
+a.no-hover-effect.active:active {
+  background-color: var(--grey) !important;
+  color: initial !important;
+  box-shadow: none !important;
+}
