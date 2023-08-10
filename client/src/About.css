@@ -1,4 +1,6 @@
-h2.about-title {}
+div.about {
+  margin-top: -20px;
+}
 
 p.about-text {
   font-size: 13px;
@@ -13,10 +15,10 @@ img.about-image {
 
 div.about-border {
   text-align: center;
-  border: 1px solid var(--red);
+  border: 1px solid #7b7d80;
   margin-top: 90px !important;
   margin-left: -50px !important;
-  background-color: beige;
+  background-color: #7b7d80;
   color: #000;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
