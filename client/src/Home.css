@@ -1,4 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/wolfsburg-castle');
+
+.align-vertical-row {
+  display: flex;
+  align-items: center; /* Center vertically */
+  flex-direction: row-reverse;
+}
+
 .home-intro {
   font-size: 30px;
-  margin-left: -700px;
+  border: 1px solid #fff;
+}
+
+.home-info {
+  padding: 2rem !important;
+  border: 1px solid var(--grey);
+  background-color: var(--grey);
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.home-image {
+  width: 200px;
+  height: 300px;
+}
+
+.price-info {
+  padding: 2rem !important;
+  border: 1px solid var(--grey);
+  background-color: var(--grey);
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.no-reverse {
+  display: flex !important;
+  align-items: center !important; /* Center vertically */
+  flex-direction: row !important;
 }
