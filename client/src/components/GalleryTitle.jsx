@@ -14,7 +14,6 @@ export default function GalleryTitle() {
             className='col s4'
             onClick={() => {
               handlePageChange('all');
-              handleClick(0);
             }}
           >
             <p className='gallery-link'>All</p>
@@ -23,7 +22,6 @@ export default function GalleryTitle() {
             className='col s4'
             onClick={() => {
               handlePageChange('wall');
-              handleClick(1);
             }}
           >
             <p className='gallery-link'>Wall Art</p>
@@ -32,7 +30,6 @@ export default function GalleryTitle() {
             className='col s4'
             onClick={() => {
               handlePageChange('cubes');
-              handleClick(2);
             }}
           >
             <p className='gallery-link'>3D Cubes</p>
