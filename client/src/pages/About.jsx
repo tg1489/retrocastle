@@ -13,17 +13,17 @@ export default function About() {
 
         <div className='col s6 about-border'>
           <p className='about-text'>
-            Welcome to Retro Castle, your portal to a nostalgic journey through
+            Welcome to RetroCastleNJ, your portal to a nostalgic journey through
             the golden era of video games. As a one-person operation, I pour my
             heart and creativity into crafting exquisite 3D wall hanging art and
             intricate 3D pop-out cubes inspired by the iconic titles that
             defined old school gaming.
             <br />
             <br />
-            As the curator, designer, and craftsman behind Retro Castle, I'm
+            As the curator, designer, and craftsman behind RetroCastleNJ, I'm
             excited to share my passion with you and help you bring a piece of
             gaming history into your everyday life. Thank you for being part of
-            the Retro Castle journey.
+            the journey.
             <br />
             <br />
             Your support fuels my creative endeavors, and I'm thrilled to be a
@@ -33,22 +33,22 @@ export default function About() {
             Sincerely, <br />
             Tony Guarino
             <br />
-            Founder and Artist, Retro Castle 🏰
+            Founder and Artist, RetroCastleNJ 🏰
           </p>
         </div>
         <div>
           <p className='about-mobile-text'>
-            Welcome to Retro Castle, your portal to a nostalgic journey through
+            Welcome to RetroCastleNJ, your portal to a nostalgic journey through
             the golden era of video games. As a one-person operation, I pour my
             heart and creativity into crafting exquisite 3D wall hanging art and
             intricate 3D pop-out cubes inspired by the iconic titles that
             defined old school gaming.
             <br />
             <br />
-            As the curator, designer, and craftsman behind Retro Castle, I'm
+            As the curator, designer, and craftsman behind RetroCastleNJ, I'm
             excited to share my passion with you and help you bring a piece of
             gaming history into your everyday life. Thank you for being part of
-            the Retro Castle journey.
+            the journey.
             <br />
             <br />
             Your support fuels my creative endeavors, and I'm thrilled to be a
@@ -58,7 +58,7 @@ export default function About() {
             Sincerely, <br />
             Tony Guarino
             <br />
-            Founder and Artist, Retro Castle 🏰
+            Founder and Artist, RetroCastleNJ 🏰
           </p>
         </div>
       </div>
