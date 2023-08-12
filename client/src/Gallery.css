@@ -3,3 +3,31 @@
   width: 300px;
   margin-bottom: 1rem;
 }
+
+.gallery-link {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.gallery-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca453b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.gallery-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.gallery-link.no-scale::after {
+  transform: scaleX(1); /* Override the scale property */
+}

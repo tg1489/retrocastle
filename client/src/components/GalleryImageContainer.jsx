@@ -1,14 +1,24 @@
-import React from 'react';
-import images from '../utils/images';
+import React, { useState } from 'react';
+import Wall from './Wall.jsx';
+import All from './All.jsx';
+import Cubes from './Cubes.jsx';
 
-export default function GalleryImageContainer() {
-  return (
-    <div className='container'>
-      <div className='row'>
-        {images.map((image, index) => (
-          <img key={index} src={image.src} className='col s3 gallery-image' />
-        ))}
-      </div>
-    </div>
-  );
+export default function GalleryImageContainer({
+  currentPage,
+  handlePageChange,
+}) {
+  const [activeItem, setActiveItem] = useState('');
+  let content;
+
+  if (currentPage === 'all') {
+    content = <All />;
+  } else if (currentPage === 'wall') {
+    content = <Wall />;
+  } else if (currentPage === 'cubes') {
+    content = <Cubes />;
+  } else {
+    content = <All />;
+  }
+
+  return <>{content}</>;
 }

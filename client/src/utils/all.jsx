@@ -1,4 +1,4 @@
-const images = [
+const all = [
   {
     src: 'https://www.pockettactics.com/wp-content/sites/pockettactics/2021/07/botw-link-2.jpg',
   },
@@ -13,4 +13,4 @@ const images = [
   },
 ];
 
-export default images;
+export default all;
