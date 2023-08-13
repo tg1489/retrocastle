@@ -10,7 +10,7 @@ export default function Home() {
         </div>
 
         <div className='row align-vertical-row'>
-          <div className='col s12 m6 l8 home-info'>
+          <div className='col s12 home-info'>
             RetroCastleNJ is a hub for intricate 3D wall hanging art and pop-out
             cubes inspired by classic Nintendo games. Each piece is a nostalgic
             homage to gaming history, crafted with meticulous detail to bring
@@ -18,7 +18,7 @@ export default function Home() {
             store or take a look at our gallery, where we proudly showcase our
             craftsmanship.
           </div>
-          <div className='col s12 m6 l4'>
+          <div className='col s12'>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
               className='home-image'
