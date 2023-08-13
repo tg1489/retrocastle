@@ -19,6 +19,15 @@ export default function Navbar({ currentPage, handlePageChange }) {
     handlePageChange(item);
   };
 
+  const closeSidenav = () => {
+    const sidenavInstance = M.Sidenav.getInstance(
+      document.querySelector('.sidenav')
+    );
+    if (sidenavInstance) {
+      sidenavInstance.close();
+    }
+  };
+
   useEffect(() => {
     // Initialize the Materialize side navigation (hamburger button)
     const sideNavElem = document.querySelector('.sidenav');
@@ -120,7 +129,10 @@ export default function Navbar({ currentPage, handlePageChange }) {
           <a
             href='#'
             className={activeItem === 'home' ? 'active' : ''}
-            onClick={() => handleItemClick('home')}
+            onClick={() => {
+              handleItemClick('home');
+              closeSidenav();
+            }}
           >
             Home
           </a>
@@ -129,7 +141,10 @@ export default function Navbar({ currentPage, handlePageChange }) {
           <a
             href='#'
             className={activeItem === 'about' ? 'about' : ''}
-            onClick={() => handleItemClick('about')}
+            onClick={() => {
+              handleItemClick('about');
+              closeSidenav();
+            }}
           >
             About
           </a>
@@ -138,7 +153,10 @@ export default function Navbar({ currentPage, handlePageChange }) {
           <a
             href='#'
             className={activeItem === 'gallery' ? 'active' : ''}
-            onClick={() => handleItemClick('gallery')}
+            onClick={() => {
+              handleItemClick('gallery');
+              closeSidenav();
+            }}
           >
             Gallery
           </a>
