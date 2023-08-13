@@ -4,8 +4,12 @@
   text-align: center;
   text-decoration: none;
   --red: #ca453b;
+  --dark-red: #ca453b8e;
   --grey: #303030;
   --background: #1e1e1e;
+}
+::selection {
+  background-color: var(--dark-red);
 }
 
 .logo {
