@@ -44,7 +44,7 @@ export default function Home() {
             craftsmanship.
           </div>
           {/* Space between text and image 1 */}
-          <div className='col s8 '>
+          <div className='col s12'>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
               className='home-image'
@@ -57,7 +57,7 @@ export default function Home() {
         <br />
 
         <div className={`${isMobile ? 'mobile-style' : 'row no-reverse'}`}>
-          <div className='col s9 price-info'>
+          <div className='col s12 price-info'>
             Discover our stunning collection of handcrafted 3D wall hanging art
             and pop-out cubes inspired by beloved Nintendo classics. With most
             items priced around $30 and occasional sales offering a 10%
@@ -65,7 +65,7 @@ export default function Home() {
             without breaking the bank.
           </div>
           {/* Space between text and image 2 */}
-          <div className='col s12 m6'>
+          <div className='col s12'>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
               className='home-image'
