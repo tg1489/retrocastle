@@ -28,7 +28,6 @@ body {
   font-size: 30px;
   /* font-family: 'Wolfsburg Castle', sans-serif; */
   font-family: 'Arcade Interlaced', sans-serif;
-
   background-image: linear-gradient(to right, #f06, #9f6);
   -webkit-background-clip: text;
   color: transparent;

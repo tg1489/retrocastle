@@ -57,7 +57,7 @@ export default function Home() {
         <br />
 
         <div className={`${isMobile ? 'mobile-style' : 'row no-reverse'}`}>
-          <div className='col s8 price-info'>
+          <div className='col s9 price-info'>
             Discover our stunning collection of handcrafted 3D wall hanging art
             and pop-out cubes inspired by beloved Nintendo classics. With most
             items priced around $30 and occasional sales offering a 10%
