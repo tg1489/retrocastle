@@ -5,6 +5,14 @@ body {
   overflow-x: hidden !important;
 }
 
+.border-container {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.border-row {
+  border: 1px solid rgb(13, 0, 253);
+}
+
 .container {
   overflow-x: hidden !important;
 }
@@ -59,6 +67,7 @@ body {
   flex-direction: row !important;
 }
 
+/* ******************************************** */
 /* MOBILE iPhone 13 Pro*/
 /* @media (max-width: 992px) and (max-height: 896px) {
   .row {
@@ -79,6 +88,7 @@ body {
 } */
 
 /* MOBILE Samsung S20 Ultra */
+
 @media (max-width: 601px) and (max-height: 992px) {
   .row {
     display: flex;
@@ -94,6 +104,6 @@ body {
     color: transparent;
   }
   .home-image {
-    
+    display: none;
   }
 }

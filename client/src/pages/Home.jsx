@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Home.css';
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+
+    handleResize(); // Call once on load
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div className='container'>
-        <div className='row'>
-          <p className='col s12 m6 home-intro'>RetroCastleNJ</p>
+      <div className='container border-container'>
+        <div className='row border-row'>
+          <p
+            className={`${
+              isMobile ? 'col s12 home-intro' : 'col s12 m6 home-intro'
+            }`}
+          >
+            RetroCastleNJ
+          </p>
         </div>
 
-        <div className='row align-vertical-row'>
-          <div className='col s12 home-info'>
+        <div
+          className={`${isMobile ? 'mobile-style' : 'row align-vertical-row '}`}
+        >
+          <div
+            className={`${isMobile ? 's12 home-info' : 'col s12 home-info '}`}
+          >
             RetroCastleNJ is a hub for intricate 3D wall hanging art and pop-out
             cubes inspired by classic Nintendo games. Each piece is a nostalgic
             homage to gaming history, crafted with meticulous detail to bring
@@ -18,7 +43,8 @@ export default function Home() {
             store or take a look at our gallery, where we proudly showcase our
             craftsmanship.
           </div>
-          <div className='col s12'>
+          {/* Space between text and image 1 */}
+          <div className='col s8 '>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
               className='home-image'
@@ -26,7 +52,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='row no-reverse'>
+        {/* Some other banner goes here */}
+
+        <br />
+
+        <div className={`${isMobile ? 'mobile-style' : 'row no-reverse'}`}>
           <div className='col s8 price-info'>
             Discover our stunning collection of handcrafted 3D wall hanging art
             and pop-out cubes inspired by beloved Nintendo classics. With most
@@ -34,7 +64,8 @@ export default function Home() {
             discount, you can elevate your space with nostalgic gaming charm
             without breaking the bank.
           </div>
-          <div className='col s12 m6 l4'>
+          {/* Space between text and image 2 */}
+          <div className='col s12 m6'>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
               className='home-image'
