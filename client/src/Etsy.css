@@ -1,0 +1,31 @@
+.btn {
+  background-color: #242424 !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  margin-bottom: 3rem;
+}
+
+.btn:hover {
+  background-color: var(--red) !important;
+}
+
+a::after {
+  /* Prevents red line underneath */
+  content: none !important;
+}
+
+.etsy-paragraph {
+  font-size: 16px;
+}
+
+.border-container-etsy {
+  margin-top: 3rem;
+  /* border: 1px solid rgb(255, 0, 0); */
+  /* background-color: var(--dark-red);
+  background: linear-gradient(to bottom, var(--dark-red), #000000); */
+}
+
+img.logo-old {
+  height: 150px;
+  width: 200px;
+}
