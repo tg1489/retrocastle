@@ -161,6 +161,40 @@ export default function Navbar({ currentPage, handlePageChange }) {
             Gallery
           </a>
         </li>
+
+        <li>
+          <a
+            href='#'
+            className={
+              activeItem === 'etsy'
+                ? 'active no-hover-effect'
+                : 'no-hover-effect'
+            }
+            onClick={() => {
+              handleItemClick('etsy');
+              closeSidenav();
+            }}
+          >
+            Etsy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href='#'
+            className={
+              activeItem === 'requests'
+                ? 'active no-hover-effect'
+                : 'no-hover-effect'
+            }
+            onClick={() => {
+              handleItemClick('requests');
+              closeSidenav();
+            }}
+          >
+            Requests
+          </a>
+        </li>
       </ul>
     </>
   );
