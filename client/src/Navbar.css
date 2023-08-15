@@ -66,3 +66,20 @@ a.no-hover-effect.active:active {
   color: initial !important;
   box-shadow: none !important;
 }
+
+/* a.no-red-bar {
+  content: none !important;
+}
+
+a.no-red-bar:hover {
+  content: none !important;
+}
+
+a.no-red-bar::after:hover {
+  content: none !important;
+} */
+
+a.no-red-bar::after {
+  content: none !important;
+  transition: none !important;
+}

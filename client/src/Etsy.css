@@ -9,11 +9,6 @@
   background-color: var(--red) !important;
 }
 
-a::after {
-  /* Prevents red line underneath */
-  content: none !important;
-}
-
 .etsy-paragraph {
   font-size: 16px;
 }

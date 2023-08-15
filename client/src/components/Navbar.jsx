@@ -46,7 +46,11 @@ export default function Navbar({ currentPage, handlePageChange }) {
           />
 
           {/* Hamburger button (Mobile menu) */}
-          <a href='#' data-target='mobile-nav' className='sidenav-trigger'>
+          <a
+            href='#'
+            data-target='mobile-nav'
+            className='sidenav-trigger no-red-bar'
+          >
             <i className='material-icons'>menu</i>
           </a>
 
@@ -55,7 +59,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
               <a
                 className={
                   activeItem === 'home'
-                    ? 'active no-hover-effect'
+                    ? 'active no-hover-effect red-bar'
                     : 'no-hover-effect'
                 }
                 onClick={() => handleItemClick('home')}
@@ -69,8 +73,8 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 href='#'
                 className={
                   activeItem === 'about'
-                    ? 'active no-hover-effect'
-                    : 'no-hover-effect'
+                    ? 'active no-hover-effect red-bar'
+                    : 'no-hover-effect red-bar'
                 }
                 onClick={() => handleItemClick('about')}
               >
@@ -83,7 +87,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 href='#'
                 className={
                   activeItem === 'gallery'
-                    ? 'active no-hover-effect'
+                    ? 'active no-hover-effect red-bar'
                     : 'no-hover-effect'
                 }
                 onClick={() => handleItemClick('gallery')}
@@ -97,7 +101,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 href='#'
                 className={
                   activeItem === 'etsy'
-                    ? 'active no-hover-effect'
+                    ? 'active no-hover-effect red-bar'
                     : 'no-hover-effect'
                 }
                 onClick={() => handleItemClick('etsy')}
@@ -111,7 +115,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 href='#'
                 className={
                   activeItem === 'requests'
-                    ? 'active no-hover-effect'
+                    ? 'active no-hover-effect red-bar'
                     : 'no-hover-effect'
                 }
                 onClick={() => handleItemClick('requests')}
@@ -128,7 +132,9 @@ export default function Navbar({ currentPage, handlePageChange }) {
         <li>
           <a
             href='#'
-            className={activeItem === 'home' ? 'active' : ''}
+            className={
+              activeItem === 'home' ? 'active no-red-bar' : 'no-red-bar'
+            }
             onClick={() => {
               handleItemClick('home');
               closeSidenav();
@@ -140,7 +146,9 @@ export default function Navbar({ currentPage, handlePageChange }) {
         <li>
           <a
             href='#'
-            className={activeItem === 'about' ? 'about' : ''}
+            className={
+              activeItem === 'about' ? 'active about no-red-bar' : 'no-red-bar'
+            }
             onClick={() => {
               handleItemClick('about');
               closeSidenav();
@@ -152,7 +160,9 @@ export default function Navbar({ currentPage, handlePageChange }) {
         <li>
           <a
             href='#'
-            className={activeItem === 'gallery' ? 'active' : ''}
+            className={
+              activeItem === 'gallery' ? 'active no-red-bar' : 'no-red-bar'
+            }
             onClick={() => {
               handleItemClick('gallery');
               closeSidenav();
@@ -166,9 +176,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           <a
             href='#'
             className={
-              activeItem === 'etsy'
-                ? 'active no-hover-effect'
-                : 'no-hover-effect'
+              activeItem === 'etsy' ? 'active no-red-bar' : 'no-red-bar'
             }
             onClick={() => {
               handleItemClick('etsy');
@@ -183,9 +191,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           <a
             href='#'
             className={
-              activeItem === 'requests'
-                ? 'active no-hover-effect'
-                : 'no-hover-effect'
+              activeItem === 'requests' ? 'active no-red-bar' : 'no-red-bar'
             }
             onClick={() => {
               handleItemClick('requests');
