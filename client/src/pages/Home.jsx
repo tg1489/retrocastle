@@ -44,17 +44,18 @@ export default function Home() {
             craftsmanship.
           </div>
           {/* Space between text and image 1 */}
-          <div className='col s12'>
+          <div className={`${isMobile ? 'mobile-col-image' : 'col s12'}`}>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
-              className='home-image'
+              className={`${isMobile ? 'mobile-image' : 'home-image'}`}
             />
           </div>
         </div>
 
-        {/* Some other banner goes here */}
+        {/* Some other banner goes here ? */}
 
-        <br />
+        {/* No space in mobile view */}
+        {isMobile ? '' : <br />}
 
         <div className={`${isMobile ? 'mobile-style' : 'row no-reverse'}`}>
           <div className='col s12 price-info'>
@@ -65,10 +66,10 @@ export default function Home() {
             without breaking the bank.
           </div>
           {/* Space between text and image 2 */}
-          <div className='col s12'>
+          <div className={`${isMobile ? 'mobile-col-image' : 'col s12'}`}>
             <img
               src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
-              className='home-image'
+              className={`${isMobile ? 'mobile-image' : 'home-image'}`}
             />
           </div>
         </div>

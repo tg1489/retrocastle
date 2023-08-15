@@ -101,3 +101,13 @@ body {
     display: none;
   }
 }
+
+.mobile-image {
+  height: 250px;
+  width: 250px;
+}
+
+.mobile-col-image {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
