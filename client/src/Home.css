@@ -19,7 +19,10 @@ body {
   flex-direction: row-reverse;
 }
 
+/* RetroCastleNJ Title */
 .home-intro {
+  padding: 0 !important;
+  margin: 0 !important;
   text-align: left;
   font-size: 30px;
   font-family: 'Arcade Interlaced', sans-serif;
@@ -103,8 +106,8 @@ body {
 }
 
 .mobile-image {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 200px;
 }
 
 .mobile-col-image {
