@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../About.css';
 
 export default function About() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 992);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+
   return (
     <div className='container about'>
       <h2 className='about-title mb-1'>About</h2>
-      <div className='row'>
+      <div className='row flex-direction-column'>
+        {/* SNES Controller */}
         <img
-          className='col s6 about-image'
+          className={isMobile ? 'mobile-about-image' : 'col s6 about-image'}
           src='https://i.imgur.com/tBAdsTS.png'
         />
 

@@ -9,9 +9,23 @@ p.about-text {
 }
 
 img.about-image {
+  display: block;
   height: 500px;
   width: 400px;
   margin-top: 1rem;
+}
+
+img.about-image-none {
+  display: none;
+}
+
+img.mobile-about-image {
+  height: 250px;
+  width: 200px;
+}
+
+div.flex-direction-column {
+  flex-direction: column;
 }
 
 div.about-border {
@@ -37,6 +51,20 @@ div.about-border {
   /* Hide */
   div.about-border {
     display: none;
+  }
+
+  p.about-mobile-text {
+    display: block;
+  }
+}
+
+/* 412 width 915 height (Galaxy S20)*/
+@media (min-width: 412px) and (min-height: 915px) {
+  img.mobile-about-image {
+    display: block !important;
+  }
+  div.about-border {
+    display: none !important;
   }
 
   p.about-mobile-text {
