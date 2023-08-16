@@ -40,8 +40,8 @@ export default function Home() {
 
   return (
     <>
-      <div className='container border-container'>
-        <div className='row border-row'>
+      <div className='container '>
+        <div className='row'>
           <p
             className={`${
               isMobile ? 'col s12 home-intro' : 'col s12 m6 home-intro'
