@@ -24,3 +24,8 @@ img.logo-old {
   height: 150px;
   width: 200px;
 }
+
+a.no-red-bar::after {
+  content: none !important;
+  transition: none !important;
+}

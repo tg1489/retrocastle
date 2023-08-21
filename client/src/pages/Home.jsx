@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img2.jpg';
 import '../Home.css';
 
 export default function Home() {
@@ -67,7 +69,7 @@ export default function Home() {
           {/* Space between text and image 1 */}
           <div className={`${isMobile ? 'mobile-col-image' : 'col s12'}`}>
             <img
-              src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
+              src={img1}
               className={`${isMobile ? 'mobile-image' : 'home-image'}`}
             />
           </div>
@@ -89,7 +91,7 @@ export default function Home() {
           {/* Space between text and image 2 */}
           <div className={`${isMobile ? 'mobile-col-image' : 'col s12'}`}>
             <img
-              src='https://e1.pxfuel.com/desktop-wallpaper/507/810/desktop-wallpaper-high-def-super-mario-bros-3-phone-by-eddieinthecity-on-763x1146-for-your-mobile-tablet-mario-bros-android.jpg'
+              src={img2}
               className={`${isMobile ? 'mobile-image' : 'home-image'}`}
             />
           </div>

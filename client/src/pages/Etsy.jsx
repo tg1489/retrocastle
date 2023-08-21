@@ -15,7 +15,7 @@ export default function Etsy() {
           </p>
           <a
             href='https://www.etsy.com/people/wyq40wlevkr85zrv?ref=hdr_user_menu-profile'
-            className='btn btn-primary'
+            className='btn btn-primary no-red-bar'
             target='_blank'
           >
             Shop Now
