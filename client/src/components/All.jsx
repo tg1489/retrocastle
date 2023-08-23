@@ -34,23 +34,3 @@ export default function All() {
     </div>
   );
 }
-
-{
-  /* <div className='container'>
-      <div className='row'>
-        {all.map((image, index) => (
-          <img key={index} src={image.src} className='col s3 gallery-image' />
-        ))}
-      </div>
-    </div> */
-}
-
-//  <div className={isMobile ? 'col s12' : 'col s3'}>
-//           {all.map((image, index) => (
-//             <img
-//               key={index}
-//               src={image.src}
-//               className={isMobile ? 'mobile-all' : 'gallery-image'}
-//             />
-//           ))}
-//         </div>
