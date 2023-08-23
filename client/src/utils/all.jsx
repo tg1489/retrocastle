@@ -12,6 +12,7 @@ import img10 from '../assets/img10.jpg';
 import img11 from '../assets/img11.jpg';
 
 const all = [
+  { src: cube1 },
   { src: img1 },
   { src: img2 },
   { src: img3 },
@@ -23,7 +24,6 @@ const all = [
   { src: img9 },
   { src: img10 },
   { src: img11 },
-  { src: cube1 },
 ];
 
 export default all;
