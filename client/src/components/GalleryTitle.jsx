@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GalleryImageContainer from './GalleryImageContainer';
 import $ from 'jquery';
 
 export default function GalleryTitle() {
   const [currentPage, setCurrentPage] = useState('all');
+  
+
+
 
   const handlePageChange = (page) => setCurrentPage(page);
 
