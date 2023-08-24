@@ -40,7 +40,7 @@ export default function All() {
               href='#'
               className='anchor-image no-red-bar modal-trigger'
               data-target='modal1'
-              onClick={() => handleClick(image.href)}
+              onClick={() => handleClick(image.src)}
             >
               <img
                 key={index}
@@ -51,19 +51,16 @@ export default function All() {
           ))}
         </div>
       </div>
+
+      {/* Modal */}
       {modalVisible && (
         <div id='modal1' className='modal'>
-          <div className='modal-content'>
-            <h2>Modal</h2>
-            <img src={selectedImage} alt='full-image' />
-          </div>
-          <div className='modal-footer'>
-            <button
-              className='modal-close waves-effect waves-green btn-flat'
-              onClick={() => setModalVisible(false)}
-            >
-              Close
-            </button>
+          <div className='modal-content clickable'>
+            <img
+              src={selectedImage}
+              alt='full-image'
+              className='modal-image-resize'
+            />
           </div>
         </div>
       )}
