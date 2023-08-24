@@ -18,6 +18,7 @@ a.no-red-bar::after {
 
 .modal {
   padding: 0 !important;
+  background-color: rgba(50, 50, 50, 0.477) !important;
 }
 
 /* Modal Content/Box */
