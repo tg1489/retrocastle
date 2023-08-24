@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import M from 'materialize-css';
 import wall from '../utils/wall';
 import '../All.css';
 
 export default function Wall() {
   const [isMobile, setIsMobile] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
 
   useEffect(() => {
     const handleResize = () => {
@@ -13,20 +16,53 @@ export default function Wall() {
 
     window.addEventListener('resize', handleResize);
 
+    // Initialize the Materialize modal
+    M.Modal.init(document.querySelectorAll('.modal'));
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   });
+
+  const handleClick = (image) => {
+    setModalVisible(true);
+    setSelectedImage(image);
+  };
 
   return (
     <div className='container'>
       <div className='row'>
         <div className='col'>
           {wall.map((image, index) => (
-            <img key={index} src={image.src} className='col s3 gallery-image' />
+            <a
+              key={index}
+              href='#'
+              className='anchor-image no-red-bar modal-trigger'
+              data-target='modal1'
+              onClick={() => handleClick(image.src)}
+            >
+              <img
+                key={index}
+                src={image.src}
+                className={isMobile ? 'mobile-all' : 'col s3 gallery-image'}
+              />
+            </a>
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      {modalVisible && (
+        <div id='modal1' className='modal'>
+          <div className='modal-content clickable'>
+            <img
+              src={selectedImage}
+              alt='full-image'
+              className='modal-image-resize'
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

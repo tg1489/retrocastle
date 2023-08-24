@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import all from '../utils/all';
-import M from 'materialize-css'; // Import Materialize CSS library
+import M from 'materialize-css';
 import '../All.css';
 
 export default function All() {
@@ -25,7 +25,6 @@ export default function All() {
   });
 
   const handleClick = (image) => {
-    console.log(image);
     setModalVisible(true);
     setSelectedImage(image);
   };
