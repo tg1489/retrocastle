@@ -114,3 +114,11 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.push-logo {
+  margin-top: 1rem !important;
+}
+
+.push-logo-mobile {
+  margin-top: 1rem !important;
+}

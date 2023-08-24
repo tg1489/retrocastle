@@ -46,7 +46,9 @@ export default function Home() {
         <div className='row'>
           <p
             className={`${
-              isMobile ? 'col s12 home-intro' : 'col s12 m6 home-intro'
+              isMobile
+                ? 'col s12 home-intro push-logo-mobile'
+                : 'col s12 m6 home-intro push-logo'
             }`}
           >
             RetroCastleNJ
