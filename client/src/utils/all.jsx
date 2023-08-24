@@ -12,18 +12,18 @@ import img10 from '../assets/img10.jpg';
 import img11 from '../assets/img11.jpg';
 
 const all = [
-  { src: cube1 },
-  { src: img1 },
-  { src: img2 },
-  { src: img3 },
-  { src: img4 },
-  { src: img5 },
-  { src: img6 },
-  { src: img7 },
-  { src: img8 },
-  { src: img9 },
-  { src: img10 },
-  { src: img11 },
+  { src: cube1, href: '../assets/cube1.jpg' },
+  { src: img1, href: '../assets/img1.jpg' },
+  { src: img2, href: '../assets/img2.jpg' },
+  { src: img3, href: '../assets/img3.jpg' },
+  { src: img4, href: '../assets/img4.jpg' },
+  { src: img5, href: '../assets/img5.jpg' },
+  { src: img6, href: '../assets/img6.jpg' },
+  { src: img7, href: '../assets/img7.jpg' },
+  { src: img8, href: '../assets/img8.jpg' },
+  { src: img9, href: '../assets/img9.jpg' },
+  { src: img10, href: '../assets/img10.jpg' },
+  { src: img11, href: '../assets/img11.jpg' },
 ];
 
 export default all;
