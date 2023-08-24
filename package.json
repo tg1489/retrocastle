@@ -2,7 +2,7 @@
   "name": "retrocastle",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "client/index.html",
   "scripts": {
     "install": "pnpm install && cd client && pnpm install && cd ../server && pnpm install",
     "test": "echo \"Error: no test specified\" && exit 1",

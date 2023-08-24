@@ -7,7 +7,7 @@ import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/retrocastle',
     element: <App />,
     children: [{ index: true, element: <Home /> }],
   },

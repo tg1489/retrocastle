@@ -1,9 +1,8 @@
 .mobile-all {
-  /* display: flex;
-  flex-direction: column; */
-  height: 600px;
-  width: 500px;
+  height: 615px;
+  width: 412px;
   margin-bottom: 1rem;
+  overflow-x: hidden !important;
 }
 
 .anchor-image {
@@ -33,7 +32,6 @@ a.no-red-bar::after {
 /* The Close Button */
 .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
 }
@@ -50,5 +48,6 @@ a.no-red-bar::after {
   height: 800px;
 }
 
-.cube-image {
+.no-overflow {
+  overflow-x: hidden !important;
 }

@@ -4,9 +4,6 @@ import $ from 'jquery';
 
 export default function GalleryTitle() {
   const [currentPage, setCurrentPage] = useState('all');
-  
-
-
 
   const handlePageChange = (page) => setCurrentPage(page);
 
