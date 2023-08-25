@@ -37,7 +37,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
   return (
     <>
       {/* Navbar */}
-      <nav>
+      <nav className='top'>
         <div className='nav-wrapper'>
           <img
             src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0b6ce5ff-f14d-4e64-b03a-556fd184594a/dg56yiu-b3ae2b7d-d2d3-4adc-ac4d-c9a9b24ce474.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBiNmNlNWZmLWYxNGQtNGU2NC1iMDNhLTU1NmZkMTg0NTk0YVwvZGc1NnlpdS1iM2FlMmI3ZC1kMmQzLTRhZGMtYWM0ZC1jOWE5YjI0Y2U0NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aeAvt3016KOSvZext9J18PrQjZ-zwJiME40QDJW0qBI'

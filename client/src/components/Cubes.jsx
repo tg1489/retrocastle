@@ -50,7 +50,9 @@ export default function Cubes() {
           ))}
         </div>
       </div>
-
+      <p className='back-to-top'>
+        <a href='#top'>Back to Top</a>
+      </p>
       {/* Modal */}
       {modalVisible && (
         <div id='modal1' className='modal'>
