@@ -1,4 +1,4 @@
-# RetroCastleNJ <img src="./client/public/fort-awesome.ico" width="30" height="40">
+# RetroCastleNJ <img src="./client/public/fort-awesome.ico" width="35" height="40">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
