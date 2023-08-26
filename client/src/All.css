@@ -17,7 +17,9 @@ a.no-red-bar::after {
 
 .modal {
   padding: 0 !important;
-  background-color: rgba(50, 50, 50, 0.477) !important;
+  /* background-color: rgba(50, 50, 50, 0.477) !important; */
+  background-image: linear-gradient(to right, #f06, #9f6);
+  /* border: 1px solid var(--red); */
 }
 
 /* Modal Content/Box */
@@ -25,8 +27,9 @@ a.no-red-bar::after {
   background-color: #32323282;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 0 !important;
-  /* border: 1px solid #888; */
+
   width: 100%; /* Could be more or less, depending on screen size */
+  height: 100%;
 }
 
 /* The Close Button */
@@ -44,7 +47,7 @@ a.no-red-bar::after {
 }
 
 .modal-image-resize {
-  width: 700px;
+  /* width: 700px; */
   height: 800px;
 }
 

@@ -58,7 +58,7 @@ export default function All() {
       {/* Modal */}
       {modalVisible && (
         <div id='modal1' className='modal'>
-          <div className='modal-content clickable'>
+          <div className='modal-content clickable gradient-border'>
             <img
               src={selectedImage}
               alt='full-image'
