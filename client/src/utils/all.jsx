@@ -1,4 +1,7 @@
 import cube1 from '../assets/cube1.jpg';
+import cube2 from '../assets/cube2.png';
+import cube3 from '../assets/cube3.png';
+import cube4 from '../assets/cube4.png';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.png';
@@ -13,6 +16,9 @@ import img11 from '../assets/img11.jpg';
 
 const all = [
   { src: cube1, href: '../assets/cube1.jpg' },
+  { src: cube2, href: '../assets/cube2.png' },
+  { src: cube3, href: '../assets/cube3.png' },
+  { src: cube4, href: '../assets/cube4.png' },
   { src: img1, href: '../assets/img1.jpg' },
   { src: img2, href: '../assets/img2.jpg' },
   { src: img3, href: '../assets/img3.jpg' },
