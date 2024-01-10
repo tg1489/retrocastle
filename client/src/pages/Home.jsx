@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
+import simpsons from '../assets/Simpsons Room.jpg';
 import '../css/Home.css';
 
 export default function Home() {
@@ -93,7 +94,7 @@ export default function Home() {
           {/* Space between text and image 2 */}
           <div className={`${isMobile ? 'mobile-col-image' : 'col s12'}`}>
             <img
-              src={img2}
+              src={simpsons}
               className={`${isMobile ? 'mobile-image' : 'home-image'}`}
             />
           </div>
