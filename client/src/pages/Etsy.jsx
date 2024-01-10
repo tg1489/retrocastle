@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Etsy.css';
+import '../css/Etsy.css';
 import logo from '../assets/logo-old.png';
 
 export default function Etsy() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../About.css';
+import '../css/About.css';
 
 export default function About() {
   const [isMobile, setIsMobile] = useState(false);

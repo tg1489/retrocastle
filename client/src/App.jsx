@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'material-icons/iconfont/material-icons.css';
 import M from 'materialize-css';
-import './App.css';
+import './css/App.css';
 import NavbarContainer from './components/NavbarContainer';
 
 function App() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import email from '../assets/email.png';
 import { Form } from '../components/Form';
-import '../Requests.css';
+import '../css/Requests.css';
 
 export default function Requests() {
   return (

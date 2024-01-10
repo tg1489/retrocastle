@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
-import '../Home.css';
+import '../css/Home.css';
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
