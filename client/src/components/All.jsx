@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import all from '../utils/all';
 import M from 'materialize-css';
-import '../All.css';
+import '../css/All.css';
 
 export default function All() {
   const [isMobile, setIsMobile] = useState(false);

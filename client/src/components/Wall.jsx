@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import M from 'materialize-css';
 import wall from '../utils/wall';
-import '../All.css';
+import '../css/All.css';
 
 export default function Wall() {
   const [isMobile, setIsMobile] = useState(false);

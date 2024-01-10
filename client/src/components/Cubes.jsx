@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import cubes from '../utils/cubes';
 import M from 'materialize-css';
-import '../All.css';
+import '../css/All.css';
 
 export default function Cubes() {
   const [isMobile, setIsMobile] = useState(false);

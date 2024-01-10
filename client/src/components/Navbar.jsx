@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../Navbar.css';
+import '../css/Navbar.css';
 
 export default function Navbar({ currentPage, handlePageChange }) {
   // Declare state variable to track the current navbar item that was clicked on (home is default)

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import '../Form.css';
+import '../css/Form.css';
 
 export const Form = () => {
   // Ref to the form element
