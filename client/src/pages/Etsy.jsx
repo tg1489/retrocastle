@@ -14,7 +14,7 @@ export default function Etsy() {
             attention to detail.
           </p>
           <a
-            href='https://www.etsy.com/people/wyq40wlevkr85zrv?ref=hdr_user_menu-profile'
+            href='https://retrocastlenj.etsy.com'
             className='btn btn-primary no-red-bar'
             target='_blank'
           >
