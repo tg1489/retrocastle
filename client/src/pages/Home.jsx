@@ -94,7 +94,7 @@ export default function Home() {
           {/* Space between text and image 2 */}
           <div className={`${isMobile ? 'mobile-col-image' : 'col s12'}`}>
             <img
-              src={simpsons}
+              src={img2}
               className={`${isMobile ? 'mobile-image' : 'home-image'}`}
             />
           </div>
