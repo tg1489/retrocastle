@@ -13,6 +13,7 @@ import img8 from '../assets/img8.jpg';
 import img9 from '../assets/img9.jpg';
 import img10 from '../assets/img10.jpg';
 import img11 from '../assets/img11.jpg';
+import watertemple from '../assets/watertemple.jpg';
 
 const all = [
   { src: cube1, href: '../assets/cube1.jpg' },
@@ -30,6 +31,7 @@ const all = [
   { src: img9, href: '../assets/img9.jpg' },
   { src: img10, href: '../assets/img10.jpg' },
   { src: img11, href: '../assets/img11.jpg' },
+  { src: watertemple, href: '../assets/watertemple.jpg' },
 ];
 
 export default all;

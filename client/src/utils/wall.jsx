@@ -9,6 +9,7 @@ import img8 from '../assets/img8.jpg';
 import img9 from '../assets/img9.jpg';
 import img10 from '../assets/img10.jpg';
 import img11 from '../assets/img11.jpg';
+import watertemple from '../assets/watertemple.jpg';
 
 const wall = [
   { src: img1 },
@@ -22,6 +23,7 @@ const wall = [
   { src: img9 },
   { src: img10 },
   { src: img11 },
+  { src: watertemple },
 ];
 
 export default wall;
