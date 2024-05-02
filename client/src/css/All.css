@@ -54,3 +54,7 @@ a.no-red-bar::after {
 .no-overflow {
   overflow-x: hidden !important;
 }
+
+.gallery-image {
+  object-fit: cover;
+}
