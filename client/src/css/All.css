@@ -56,5 +56,6 @@ a.no-red-bar::after {
 }
 
 .gallery-image {
+  /* Fix stretched images */
   object-fit: cover;
 }
